@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+{% for post in site.posts %}
+<article class="group posts-grid blog-post">
+    <header class="blog-article-header">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <h2 class="post-title">
+                {{ post.title }}
+              </h2>
+            </a>
+    </header>
+    <section class="post-content">
+        <div class="post-meta">
+           <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+        </div>
+        <p>{{ post.content | strip_html | truncate: 250 }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}">Full Post →</a>
+    </section>
+</article>
+{% endfor %}

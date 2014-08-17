@@ -1,0 +1,11 @@
+title: Anandu B Ajith
+email: reach2anandu@gmail.com
+description: Musings, thoughts, and brain dumps.
+baseurl: "" 
+url: "http://anandubajith.github.io" 
+author: Anandu B Ajith
+twitter: anandubajith
+permalink: /blog/:title
+markdown: kramdown
+sass:
+    style: :compressed
